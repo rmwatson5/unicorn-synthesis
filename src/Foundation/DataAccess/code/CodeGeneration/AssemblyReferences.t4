@@ -1,0 +1,4 @@
+﻿<#@ Assembly Name="$(SolutionDir)\packages\Sitecore.Kernel.NoReferences.9.0.180604\lib\NET462\Sitecore.Kernel.dll" #>
+<#@ assembly name="$(ProjectDir)$(OutDir)Transitus.Rainbow.dll" #>
+<#@ assembly name="$(ProjectDir)$(OutDir)Sitecore.Foundation.DataAccess.dll" #>
+<#@ assembly name="$(SolutionDir)\packages\Sitecore.ContentSearch.Linq.NoReferences.9.0.180604\lib\NET462\Sitecore.ContentSearch.Linq.dll" #>

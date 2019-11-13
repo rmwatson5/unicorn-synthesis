@@ -1,0 +1,168 @@
+<#@ include file="AssemblyReferences.t4" #>
+<#@ Assembly Name="System.Core" #>
+<#@ Assembly Name="System.Windows.Forms" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="System.Globalization" #>
+<#@ import namespace="Transitus.Rainbow" #>
+<#
+	const string tab = "	"; // "\t"
+	var items = new List<IItem>();
+
+	foreach (var folder in folders)
+	{
+		var deserializedItems = Transitus.Rainbow.TransitusProvider.FolderDeserializer.Deserialize(folder);
+		items.AddRange(deserializedItems);
+	}
+
+	foreach (var item in items)
+	{
+		var wildcardCounter = 0;
+		if (item == null || DoNotGenerate(item)) {
+			continue;
+		}
+#>
+#region <#= item.Name #> (<#= RelativeNamespace(item.ItemPath) #>)
+namespace <#= FullNamespace(item) #>
+{
+	using System;
+	<#= BuildClassDefinition(item, ref wildcardCounter) #>
+		public static readonly Guid Id = new Guid("<#= item.Id.ToString().ToUpper() #>");
+		public static readonly Guid TemplateId = new Guid("<#= item.TemplateId.ToString().ToUpper() #>");
+		public static readonly Guid ParentId = new Guid("<#= item.ParentId.ToString().ToUpper() #>");
+		public const string Name = "<#= item.Name #>";
+		public const string Path = "<#= item.ItemPath #>";
+	}
+}
+#endregion
+<#
+	}	
+#>
+
+<#+
+public string RelativeNamespace(string templatePath)
+{
+	var relativeNamespace = string.Empty;
+
+	if (templatePath.StartsWith(SitecoreSystemTemplatePath))
+	{
+		relativeNamespace = "ScSystem";
+	}
+	else if (templatePath.StartsWith(ClientTemplatePath))
+	{
+		relativeNamespace = RelativeNameSpaceUserDefined;
+	}
+	
+	return relativeNamespace;
+}
+
+public string FullNamespace(IItem item)
+{
+    var baseNamespace = BaseNamespace + ".Static";
+    if (item.ItemPath.StartsWith("/sitecore/layout/Renderings"))
+    {
+        return baseNamespace + ".Renderings";
+    }
+    else if (item.ItemPath.StartsWith("/sitecore/layout/Layouts"))
+    {
+        return baseNamespace + ".Layouts";
+    }
+    else if (item.ItemPath.StartsWith("/sitecore/content"))
+    {
+        return baseNamespace + ".Content";
+    }
+    else 
+    {
+        return baseNamespace;
+    }
+}
+
+private string BuildClassDefinition(IItem item, ref int wildcardCounter){
+        return BuildClassDefinition(TitleCase(item.Name, ref wildcardCounter));
+}
+
+private string BuildClassDefinition(string className){
+        return "public static partial class " + className + " {";
+}
+
+private bool DoNotGenerate(IItem item)
+{
+    var discludedTemplateIds = new List<string>
+    {
+        "{7EE0975B-0698-493E-B3A2-0B2EF33D0522}", // Renderings Folder
+        "{ED2E6B1C-FEDF-4ADC-B54F-702D245370BD}", // User Generated Email 
+    };
+
+    var startsWithNumberValidator = new Regex(@"^\d[1,]*");
+    var startsWithNumber = startsWithNumberValidator.IsMatch(item.Name);
+
+    var isInFilterList = discludedTemplateIds.Contains(item.TemplateId.ToString().ToUpper());
+
+    return startsWithNumber || isInFilterList;
+}
+
+public string TitleCase(string name, ref int wildcardCounter)
+{
+	if (name == "*")
+	{
+		wildcardCounter++;
+		name = "Wildcard_" + wildcardCounter;
+	}
+	name = Regex.Replace(name, "([a-z](?=[A-Z])|[A-Z](?=[A-Z][a-z]))", "$1 ");
+	name = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(name);
+	name = Regex.Replace(name, @"[^a-zA-Z0-9]", String.Empty);
+
+	var firstChar = 0;
+
+	if (int.TryParse(name.Substring(0, 1), out firstChar))
+	{
+		var numberToWord = string.Empty;
+
+		switch(firstChar)
+		{
+			case 0:
+				numberToWord = "Zero";
+				break;
+			case 1:
+				numberToWord = "One";
+				break;
+			case 2:
+				numberToWord = "Two";
+				break;
+			case 3:
+				numberToWord = "Three";
+				break;
+			case 4:
+				numberToWord = "Four";
+				break;
+			case 5:
+				numberToWord = "Five";
+				break;
+			case 6:
+				numberToWord = "Six";
+				break;
+			case 7:
+				numberToWord = "Seven";
+				break;
+			case 8:
+				numberToWord = "Eight";
+				break;
+			case 9:
+				numberToWord = "Nine";
+				break;
+		}
+
+		name = numberToWord + name.Remove(0, 1);
+	}
+	
+	name = string.Equals(name, "System") ? "ScSystem" : name;
+
+	return name;
+}
+#>
