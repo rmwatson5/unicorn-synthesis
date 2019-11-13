@@ -183,34 +183,24 @@
     <Content Include="App_Config\Include\Project\Project.Website.config" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Synthesis\Synthesis.Startup.config" />
-    <Content Include="App_Config\Include\Synthesis\Synthesis.LocalConfig.config.example" />
     <Content Include="App_Config\Include\Synthesis\Synthesis.ControlPanel.config" />
     <Content Include="App_Config\Include\Synthesis\Synthesis.AutoRegenerate.config" />
     <Content Include="App_Config\Include\Synthesis\Synthesis.Mvc.config" />
     <Content Include="App_Config\Include\Synthesis\Synthesis.Solr.Config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config.disabled" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.UI.DeployedContentEditorWarnings.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.PowerShell.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Dilithium.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.DataProvider.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.DataProvider.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.Roles.config.example" />
+    <None Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\TeamCity.pubxml" />
-    <Content Include="Standard Config Files\Synthesis.ControlPanel.IdentityServer.config.disabled" />
+    <None Include="App_Config\Include\Synthesis\Synthesis.ControlPanel.IdentityServer.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -219,7 +209,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Standard Config Files\" />
     <Folder Include="Views\Layouts\" />
   </ItemGroup>
   <ItemGroup>
