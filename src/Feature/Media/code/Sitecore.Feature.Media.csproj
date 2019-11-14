@@ -80,6 +80,7 @@
     <Compile Include="Controllers\SynthesisMediaController.cs" />
     <Compile Include="ModelRegistration.cs" />
     <Compile Include="Model\CarouselRenderingModel.cs" />
+    <Compile Include="Model\ItemListingRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Synthesis.Model.cs" />
   </ItemGroup>

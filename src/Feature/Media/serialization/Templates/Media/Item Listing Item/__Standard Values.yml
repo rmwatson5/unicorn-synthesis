@@ -1,0 +1,17 @@
+﻿---
+ID: "547f37f3-eecd-4d5a-954a-30d0577b016c"
+Parent: "c6fe8934-f4c5-4df0-a81d-288c33c6f9f8"
+Template: "c6fe8934-f4c5-4df0-a81d-288c33c6f9f8"
+Path: /sitecore/templates/Feature/Media/Item Listing Item/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T150346Z
+    - ID: "fa26fc2f-ab64-4663-b24b-be0831e4e552"
+      Hint: Header Text
+      Value: $name

@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using Sitecore.Feature.Media.Model;
+using Sitecore.Feature.Media.Models;
 using Sitecore.Feature.Media.Models.Concrete;
 
 namespace Sitecore.Feature.Media.Controllers
@@ -16,7 +17,9 @@ namespace Sitecore.Feature.Media.Controllers
 
         public ActionResult ItemListing()
         {
-            return this.View();
+            var model = new ItemListingRenderingModel();
+            model.ListingItems = model.RenderingItem.Children.OfType<IItemListingItemItem>();
+            return this.View(model);
         }
     }
 }

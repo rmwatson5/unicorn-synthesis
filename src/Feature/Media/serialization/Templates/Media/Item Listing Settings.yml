@@ -1,0 +1,22 @@
+﻿---
+ID: "410795fa-21f0-415b-8164-a3ac50e38b72"
+Parent: "c3600383-6f30-47e2-ae3e-ee02b74be1a4"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/Media/Item Listing Settings
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{15E60B57-A4FD-4381-8983-5E704F6D39F9}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{E7B77993-44D3-426F-B98F-6DE457BDEDF1}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T150630Z

@@ -13,7 +13,7 @@ namespace Sitecore.Feature.Media.Models {
     
     /// <summary>Represents the /sitecore/templates/Feature/Media/Carousel Settings template</summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.1")]
-    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{AF2C6BEC-5346-4D3F-B752-65FA70F02C37}", "+jJkwInSS5PQ1c7SkucaJ9lHypw=", "Sitecore.Feature.Media")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{AF2C6BEC-5346-4D3F-B752-65FA70F02C37}", "0UbLzi4FBZGayRk8jDtbamrtJb4=", "Sitecore.Feature.Media")]
     public partial interface ICarouselSettingsItem : global::Sitecore.Foundation.BaseSite.Models.I_BaseStandardTemplateItem {
         
         /// <summary>Represents the Left Text field</summary>
@@ -25,6 +25,12 @@ namespace Sitecore.Feature.Media.Models {
         /// <summary>Represents the Right Text field</summary>
         [Sitecore.ContentSearch.IndexFieldAttribute("right_text")]
         Synthesis.FieldTypes.Interfaces.ITextField RightText {
+            get;
+        }
+        
+        /// <summary>Represents the Middle Text field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("middle_text")]
+        Synthesis.FieldTypes.Interfaces.ITextField MiddleText {
             get;
         }
     }
@@ -39,6 +45,42 @@ namespace Sitecore.Feature.Media.Models {
         Synthesis.FieldTypes.Interfaces.IImageField SlideImage {
             get;
         }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Feature/Media/Item Listing Item template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.1")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{C6FE8934-F4C5-4DF0-A81D-288C33C6F9F8}", "Wzkuov5iSy/iS8ELKNaiuF8sPJU=", "Sitecore.Feature.Media")]
+    public partial interface IItemListingItemItem : global::Sitecore.Foundation.BaseSite.Models.I_BaseStandardTemplateItem {
+        
+        /// <summary>Represents the Image field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("image")]
+        Synthesis.FieldTypes.Interfaces.IImageField Image {
+            get;
+        }
+        
+        /// <summary>Represents the Header Text field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("header_text")]
+        Synthesis.FieldTypes.Interfaces.ITextField HeaderText {
+            get;
+        }
+        
+        /// <summary>Represents the Header Link field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("header_link")]
+        Synthesis.FieldTypes.Interfaces.IHyperlinkField HeaderLink {
+            get;
+        }
+        
+        /// <summary>Represents the Body Text field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("body_text")]
+        Synthesis.FieldTypes.Interfaces.ITextField BodyText {
+            get;
+        }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Feature/Media/Item Listing Settings template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.1")]
+    [Synthesis.Synchronization.RepresentsSitecoreTemplateAttribute("{410795FA-21F0-415B-8164-A3AC50E38B72}", "fic+xiVddmfSLKzAjH0/vUoB1dc=", "Sitecore.Feature.Media")]
+    public partial interface IItemListingSettingsItem : global::Sitecore.Foundation.BaseSite.Models.I_BaseStandardTemplateItem {
     }
 }
 
@@ -62,6 +104,8 @@ namespace Sitecore.Feature.Media.Models.Concrete {
         private Synthesis.FieldTypes.TextField _leftText;
         
         private Synthesis.FieldTypes.TextField _rightText;
+        
+        private Synthesis.FieldTypes.TextField _middleText;
         
         public CarouselSettings(Sitecore.Data.Items.Item innerItem) : 
                 base(innerItem) {
@@ -111,6 +155,17 @@ namespace Sitecore.Feature.Media.Models.Concrete {
                     _rightText = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{75CA831E-B3A6-4430-8A6B-6C79552E9C04}"], "/sitecore/templates/Feature/Media/Carousel Settings", "Right Text"), this.GetSearchFieldValue("right_text"));
                 }
                 return _rightText;
+            }
+        }
+        
+        /// <summary>Represents the Middle Text field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("middle_text")]
+        public Synthesis.FieldTypes.Interfaces.ITextField MiddleText {
+            get {
+                if (_middleText == null) {
+                    _middleText = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{B0ED01EB-6207-45F8-94B4-6E91812A76AF}"], "/sitecore/templates/Feature/Media/Carousel Settings", "Middle Text"), this.GetSearchFieldValue("middle_text"));
+                }
+                return _middleText;
             }
         }
     }
@@ -195,6 +250,162 @@ namespace Sitecore.Feature.Media.Models.Concrete {
         
         public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
             return new CarouselSlide(searchFields);
+        }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Feature/Media/Item Listing Item template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.1")]
+    public partial class ItemListingItem : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.Media.Models.IItemListingItemItem {
+        
+        private Synthesis.FieldTypes.ImageField _image;
+        
+        private Synthesis.FieldTypes.TextField _headerText;
+        
+        private Synthesis.FieldTypes.HyperlinkField _headerLink;
+        
+        private Synthesis.FieldTypes.TextField _bodyText;
+        
+        public ItemListingItem(Sitecore.Data.Items.Item innerItem) : 
+                base(innerItem) {
+        }
+        
+        public ItemListingItem(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
+                base(searchFields) {
+        }
+        
+        /// <summary>The name of the Sitecore Template that this class represents</summary>
+        public static string TemplateName {
+            get {
+                return "Item Listing Item";
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public static Sitecore.Data.ID ItemTemplateId {
+            get {
+                return new Sitecore.Data.ID("{C6FE8934-F4C5-4DF0-A81D-288C33C6F9F8}");
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public override Sitecore.Data.ID TemplateId {
+            get {
+                return ItemTemplateId;
+            }
+        }
+        
+        /// <summary>Represents the Image field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("image")]
+        public Synthesis.FieldTypes.Interfaces.IImageField Image {
+            get {
+                if (_image == null) {
+                    _image = new Synthesis.FieldTypes.ImageField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{F7212394-9EE0-4F72-A691-070CB09356B8}"], "/sitecore/templates/Feature/Media/Item Listing Item", "Image"), this.GetSearchFieldValue("image"));
+                }
+                return _image;
+            }
+        }
+        
+        /// <summary>Represents the Header Text field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("header_text")]
+        public Synthesis.FieldTypes.Interfaces.ITextField HeaderText {
+            get {
+                if (_headerText == null) {
+                    _headerText = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{FA26FC2F-AB64-4663-B24B-BE0831E4E552}"], "/sitecore/templates/Feature/Media/Item Listing Item", "Header Text"), this.GetSearchFieldValue("header_text"));
+                }
+                return _headerText;
+            }
+        }
+        
+        /// <summary>Represents the Header Link field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("header_link")]
+        public Synthesis.FieldTypes.Interfaces.IHyperlinkField HeaderLink {
+            get {
+                if (_headerLink == null) {
+                    _headerLink = new Synthesis.FieldTypes.HyperlinkField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{3EC7D066-DF5B-4890-9B46-0D0C196B846E}"], "/sitecore/templates/Feature/Media/Item Listing Item", "Header Link"), this.GetSearchFieldValue("header_link"));
+                }
+                return _headerLink;
+            }
+        }
+        
+        /// <summary>Represents the Body Text field</summary>
+        [Sitecore.ContentSearch.IndexFieldAttribute("body_text")]
+        public Synthesis.FieldTypes.Interfaces.ITextField BodyText {
+            get {
+                if (_bodyText == null) {
+                    _bodyText = new Synthesis.FieldTypes.TextField(new global::Synthesis.FieldTypes.LazyField(() => InnerItem.Fields["{9E5E689F-2D7A-45A6-A1C6-902ADA4715F8}"], "/sitecore/templates/Feature/Media/Item Listing Item", "Body Text"), this.GetSearchFieldValue("body_text"));
+                }
+                return _bodyText;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.1")]
+    public class ItemListingItemInitializer : Synthesis.Initializers.ITemplateInitializer {
+        
+        public Sitecore.Data.ID InitializesTemplateId {
+            get {
+                return new Sitecore.Data.ID("{C6FE8934-F4C5-4DF0-A81D-288C33C6F9F8}");
+            }
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
+            return new ItemListingItem(innerItem);
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
+            return new ItemListingItem(searchFields);
+        }
+    }
+    
+    /// <summary>Represents the /sitecore/templates/Feature/Media/Item Listing Settings template</summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.1")]
+    public partial class ItemListingSettings : global::Synthesis.StandardTemplateItem, global::Sitecore.Feature.Media.Models.IItemListingSettingsItem {
+        
+        public ItemListingSettings(Sitecore.Data.Items.Item innerItem) : 
+                base(innerItem) {
+        }
+        
+        public ItemListingSettings(global::System.Collections.Generic.IDictionary<string, string> searchFields) : 
+                base(searchFields) {
+        }
+        
+        /// <summary>The name of the Sitecore Template that this class represents</summary>
+        public static string TemplateName {
+            get {
+                return "Item Listing Settings";
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public static Sitecore.Data.ID ItemTemplateId {
+            get {
+                return new Sitecore.Data.ID("{410795FA-21F0-415B-8164-A3AC50E38B72}");
+            }
+        }
+        
+        /// <summary>The ID of the Sitecore Template that this class represents</summary>
+        public override Sitecore.Data.ID TemplateId {
+            get {
+                return ItemTemplateId;
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Synthesis", "9.1")]
+    public class ItemListingSettingsInitializer : Synthesis.Initializers.ITemplateInitializer {
+        
+        public Sitecore.Data.ID InitializesTemplateId {
+            get {
+                return new Sitecore.Data.ID("{410795FA-21F0-415B-8164-A3AC50E38B72}");
+            }
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstance(Sitecore.Data.Items.Item innerItem) {
+            return new ItemListingSettings(innerItem);
+        }
+        
+        public Synthesis.IStandardTemplateItem CreateInstanceFromSearch(global::System.Collections.Generic.IDictionary<string, string> searchFields) {
+            return new ItemListingSettings(searchFields);
         }
     }
 }
