@@ -141,8 +141,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\site.css" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -200,6 +202,7 @@
     <Content Include="App_Config\Include\Feature\Feature.Scaffolding.Serialization.config" />
     <Content Include="App_Config\Include\Foundation\Foundation.BaseSite.Serialization.config" />
     <Content Include="App_Config\Include\Feature\Feature.Frames.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Media.Serialization.config" />
     <None Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
@@ -209,6 +212,8 @@
     <None Include="App_Config\Include\Synthesis\Synthesis.ControlPanel.IdentityServer.config" />
     <Content Include="Views\Layouts\Default.cshtml" />
     <Content Include="Views\Header\MainNavigation.cshtml" />
+    <Content Include="Views\Frames\Col-Lg3-Lg9.cshtml" />
+    <Content Include="Views\SynthesisMedia\Carousel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -216,10 +221,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Views\Frames\" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\..\..\Feature\Media\code\Sitecore.Feature.Media.csproj">
+      <Project>{c0c8b4e4-0b24-4ab4-a8c6-433873193d55}</Project>
+      <Name>Sitecore.Feature.Media</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Feature\Scaffolding\code\Sitecore.Feature.Scaffolding.csproj">
       <Project>{c15078a3-eb2f-48df-a38a-edef69ff4058}</Project>
       <Name>Sitecore.Feature.Scaffolding</Name>

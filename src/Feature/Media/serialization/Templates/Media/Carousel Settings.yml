@@ -1,0 +1,25 @@
+﻿---
+ID: "af2c6bec-5346-4d3f-b752-65fa70f02c37"
+Parent: "c3600383-6f30-47e2-ae3e-ee02b74be1a4"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/Media/Carousel Settings
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/elements3.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{15E60B57-A4FD-4381-8983-5E704F6D39F9}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{6DDA091C-59BB-4891-A8B3-81C26C89DE7F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T051555Z

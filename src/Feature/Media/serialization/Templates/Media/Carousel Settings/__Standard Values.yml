@@ -1,0 +1,19 @@
+﻿---
+ID: "6dda091c-59bb-4891-a8b3-81c26c89de7f"
+Parent: "af2c6bec-5346-4d3f-b752-65fa70f02c37"
+Template: "af2c6bec-5346-4d3f-b752-65fa70f02c37"
+Path: /sitecore/templates/Feature/Media/Carousel Settings/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{8B2B1A2E-B230-46BA-AE6F-51F6C03E110C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T051610Z

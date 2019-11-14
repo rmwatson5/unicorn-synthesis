@@ -1,0 +1,44 @@
+﻿@using Sitecore.Feature.Media.Models
+@using Synthesis.Mvc.Extensions
+@model Sitecore.Feature.Media.Model.CarouselRenderingModel
+@{
+    var indicators = string.Empty;
+    var slidesContent = string.Empty;
+    var index = 0;
+
+    foreach (var slide in Model.Slides)
+    {
+        indicators += RenderIndicator(index);
+        slidesContent += RenderCarouselSlide(index == 0, slide);
+        index++;
+    }
+}
+
+<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+    <ol class="carousel-indicators">
+        @Html.Raw(indicators)
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        @Html.Raw(slidesContent)
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">@Model.RenderingItem.LeftText.Render()</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">@Model.RenderingItem.RightText.Render()</span>
+    </a>
+</div>
+
+@helper RenderIndicator(int slide)
+{
+    <li data-target="#carouselExampleIndicators" data-slide-to="@slide" class="@(slide == 0 ? "active" : string.Empty)"></li>
+}
+
+@helper RenderCarouselSlide(bool isActive, ICarouselSlideItem slide)
+{
+    <div class="carousel-item @(isActive ? "active" : string.Empty)">
+        @slide.SlideImage.Render("d-block img-fluid")
+    </div>
+}

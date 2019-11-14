@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29503.13
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{7F387A11-DF0D-4C80-B528-5ABE82D048D5}"
 EndProject
@@ -34,6 +34,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BaseSite", "BaseSite", "{5B3DBE06-9B78-4BE6-975D-DA836AD86B29}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.BaseSite", "src\Foundation\BaseSite\code\Sitecore.Foundation.BaseSite.csproj", "{C0E8051B-AD09-4A4E-B869-1DDB3EF57854}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Media", "Media", "{0ABF9FDB-3379-4380-B3EC-46FA1568E187}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Media", "src\Feature\Media\code\Sitecore.Feature.Media.csproj", "{C0C8B4E4-0B24-4AB4-A8C6-433873193D55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +76,12 @@ Global
 		{C0E8051B-AD09-4A4E-B869-1DDB3EF57854}.Dev|Any CPU.Build.0 = Debug|Any CPU
 		{C0E8051B-AD09-4A4E-B869-1DDB3EF57854}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0E8051B-AD09-4A4E-B869-1DDB3EF57854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C8B4E4-0B24-4AB4-A8C6-433873193D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C8B4E4-0B24-4AB4-A8C6-433873193D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C8B4E4-0B24-4AB4-A8C6-433873193D55}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C8B4E4-0B24-4AB4-A8C6-433873193D55}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{C0C8B4E4-0B24-4AB4-A8C6-433873193D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C8B4E4-0B24-4AB4-A8C6-433873193D55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +97,8 @@ Global
 		{C15078A3-EB2F-48DF-A38A-EDEF69FF4058} = {388400AA-3AAD-4DBE-AF1D-26111E974D62}
 		{5B3DBE06-9B78-4BE6-975D-DA836AD86B29} = {E61FA46A-2E35-4C66-B79B-F97F02DBD87A}
 		{C0E8051B-AD09-4A4E-B869-1DDB3EF57854} = {5B3DBE06-9B78-4BE6-975D-DA836AD86B29}
+		{0ABF9FDB-3379-4380-B3EC-46FA1568E187} = {C1A2A3D2-F2DC-42B7-9993-D28F897B818F}
+		{C0C8B4E4-0B24-4AB4-A8C6-433873193D55} = {0ABF9FDB-3379-4380-B3EC-46FA1568E187}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF97D5C7-8A98-4EF6-9557-DA282F8801D8}
