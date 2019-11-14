@@ -1,0 +1,18 @@
+﻿---
+ID: "1079521c-010b-4702-a315-893f2b66485a"
+Parent: "b4e1f1ca-cb02-4f47-97a3-50f02059f9ee"
+Template: "4e19f038-f2ac-4e13-b504-61726778a4cb"
+Path: "/sitecore/content/Sites/Sandbox/Home/local-content"
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Local Content
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T032520Z

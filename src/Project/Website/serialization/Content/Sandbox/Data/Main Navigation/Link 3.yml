@@ -1,0 +1,22 @@
+﻿---
+ID: "72ff5cf4-cd86-4076-ba08-601428d783ac"
+Parent: "af06f18e-b96e-4662-b9fb-f007bcba1e68"
+Template: "f7d70504-4379-48ea-8105-ceb5184c754f"
+Path: /sitecore/content/Sites/Sandbox/Data/Main Navigation/Link 3
+DB: master
+SharedFields:
+- ID: "9e7d7b9b-c87b-407e-8624-f6bd15e53a9a"
+  Hint: Link
+  Value: |
+    <link text="Link 3" anchor="" linktype="internal" class="" title=""  querystring="" id="{B4E1F1CA-CB02-4F47-97A3-50F02059F9EE}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T043144Z
+    - ID: "bf621c36-9f8b-4ce4-8b82-ff2e8a4978ce"
+      Hint: Link Text
+      Value: Link 3

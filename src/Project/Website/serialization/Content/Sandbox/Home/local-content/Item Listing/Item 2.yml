@@ -1,0 +1,29 @@
+﻿---
+ID: "9e9da3dd-0abb-44d7-9fbc-088a9b20e8cd"
+Parent: "68c0715b-f744-4600-b2f3-b8f40c50a72d"
+Template: "c6fe8934-f4c5-4df0-a81d-288c33c6f9f8"
+Path: "/sitecore/content/Sites/Sandbox/Home/local-content/Item Listing/Item 2"
+DB: master
+SharedFields:
+- ID: "3ec7d066-df5b-4890-9b46-0d0c196b846e"
+  Hint: Header Link
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{B4E1F1CA-CB02-4F47-97A3-50F02059F9EE}" />
+- ID: "f7212394-9ee0-4f72-a691-070cb09356b8"
+  Hint: Image
+  Value: |
+    <image mediaid="{ADDF90D0-D16E-46DA-8FD6-D0E8E02B8D2E}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T151349Z
+    - ID: "9e5e689f-2d7a-45a6-a1c6-902ada4715f8"
+      Hint: Body Text
+      Value: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
+    - ID: "fa26fc2f-ab64-4663-b24b-be0831e4e552"
+      Hint: Header Text
+      Value: Item 2

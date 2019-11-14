@@ -1,0 +1,20 @@
+﻿---
+ID: "b2236b45-7718-4528-88be-4f7f0fe8e3fc"
+Parent: "1079521c-010b-4702-a315-893f2b66485a"
+Template: "af2c6bec-5346-4d3f-b752-65fa70f02c37"
+Path: "/sitecore/content/Sites/Sandbox/Home/local-content/Carousel Settings"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19734d94-f3eb-47c1-8bfd-efe2c3ce3c7c"
+      Hint: Left Text
+      Value: Left
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T054317Z
+    - ID: "75ca831e-b3a6-4430-8a6b-6c79552e9c04"
+      Hint: Right Text
+      Value: Right

@@ -1,0 +1,17 @@
+﻿---
+ID: "af06f18e-b96e-4662-b9fb-f007bcba1e68"
+Parent: "8e312ebd-b1b1-4c06-9afd-9d54f9c0df35"
+Template: "013261f6-378b-4750-9980-7dcb9991bf9e"
+Path: /sitecore/content/Sites/Sandbox/Data/Main Navigation
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T032703Z
+    - ID: "379afb4f-bebf-41a8-afb4-efceb768924b"
+      Hint: Icon Text
+      Value: "Unicorn-Synthesis"

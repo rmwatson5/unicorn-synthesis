@@ -1,0 +1,18 @@
+﻿---
+ID: "b8d63307-5e3a-455d-9f4b-2d69ab33c756"
+Parent: "b2236b45-7718-4528-88be-4f7f0fe8e3fc"
+Template: "8b2b1a2e-b230-46ba-ae6f-51f6c03e110c"
+Path: "/sitecore/content/Sites/Sandbox/Home/local-content/Carousel Settings/Slide 1"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T054350Z
+    - ID: "9dddf327-9ba7-40b9-8121-f1aedd63f8f7"
+      Hint: Slide Image
+      Value: |
+        <image mediaid="{9A4A442F-2A61-47F5-9E95-9FEA743B51C1}" />

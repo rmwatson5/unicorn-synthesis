@@ -1,0 +1,14 @@
+﻿---
+ID: "a1a756e5-1b8c-41b7-85a7-69ef3d9ad20f"
+Parent: "2a2ba655-f0cb-4953-9fb8-495dfdc6851c"
+Template: "dd785895-fa3b-4fc0-bd37-ee060b271089"
+Path: /sitecore/content/Sites/Sandbox
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T031545Z

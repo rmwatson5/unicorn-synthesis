@@ -1,0 +1,14 @@
+﻿---
+ID: "68c0715b-f744-4600-b2f3-b8f40c50a72d"
+Parent: "1079521c-010b-4702-a315-893f2b66485a"
+Template: "410795fa-21f0-415b-8164-a3ac50e38b72"
+Path: "/sitecore/content/Sites/Sandbox/Home/local-content/Item Listing"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T151337Z

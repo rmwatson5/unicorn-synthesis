@@ -1,0 +1,51 @@
+﻿---
+ID: "b4e1f1ca-cb02-4f47-97a3-50f02059f9ee"
+Parent: "a1a756e5-1b8c-41b7-85a7-69ef3d9ad20f"
+Template: "36fa138c-0ba5-4599-9fa9-8dea3e4e5f30"
+Path: /sitecore/content/Sites/Sandbox/Home
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{769D0BA2-0102-42EC-85CE-F052852748B3}"
+          p:before="*"
+          s:ds="{AF06F18E-B96E-4662-B9FB-F007BCBA1E68}"
+          s:id="{EE8D8B65-4289-49D5-9399-B0405F4B4C5D}"
+          s:par=""
+          s:ph="body" />
+        <r
+          uid="{C8C5AF99-8994-4A7B-BEF0-07C8C49E5E6A}"
+          p:after="r[@uid='{769D0BA2-0102-42EC-85CE-F052852748B3}']"
+          s:id="{2437B632-43B4-451C-8737-E96D1DE39EB7}"
+          s:ph="body" />
+        <r
+          uid="{51EF13B0-79BB-403C-9A96-28D17F484AC1}"
+          p:after="r[@uid='{C8C5AF99-8994-4A7B-BEF0-07C8C49E5E6A}']"
+          s:ds="{B2236B45-7718-4528-88BE-4F7F0FE8E3FC}"
+          s:id="{A28FE0A7-C410-4D89-B90F-94F46A7CCA20}"
+          s:par=""
+          s:ph="right" />
+        <r
+          uid="{6D699DC0-1481-43D0-B918-32CD7BCD60D5}"
+          p:after="*[1=2]"
+          s:ds="{68C0715B-F744-4600-B2F3-B8F40C50A72D}"
+          s:id="{427A5768-1186-4625-AD7D-C90E311A75CD}"
+          s:par=""
+          s:ph="right" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T031654Z
