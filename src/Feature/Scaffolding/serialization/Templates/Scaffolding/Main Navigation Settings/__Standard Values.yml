@@ -1,0 +1,19 @@
+﻿---
+ID: "9baebaa4-9c15-4a2e-ae64-13321a15e7d4"
+Parent: "013261f6-378b-4750-9980-7dcb9991bf9e"
+Template: "013261f6-378b-4750-9980-7dcb9991bf9e"
+Path: /sitecore/templates/Feature/Scaffolding/Main Navigation Settings/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{F7D70504-4379-48EA-8105-CEB5184C754F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T020511Z

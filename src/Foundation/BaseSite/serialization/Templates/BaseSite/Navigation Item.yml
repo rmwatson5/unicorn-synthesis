@@ -1,0 +1,25 @@
+﻿---
+ID: "f7d70504-4379-48ea-8105-ceb5184c754f"
+Parent: "75a3f5a0-17df-4d8b-874a-ed82dc2d94c9"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/BaseSite/Navigation Item
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/arrow_junction.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{15E60B57-A4FD-4381-8983-5E704F6D39F9}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{54389DD6-96BA-410D-A2A6-0A4A92730D41}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T041420Z

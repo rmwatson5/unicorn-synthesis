@@ -1,0 +1,25 @@
+﻿---
+ID: "013261f6-378b-4750-9980-7dcb9991bf9e"
+Parent: "74562c96-01fc-423e-bd9f-c5377739e2d9"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/Scaffolding/Main Navigation Settings
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Apps/32x32/Maps.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{15E60B57-A4FD-4381-8983-5E704F6D39F9}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{9BAEBAA4-9C15-4A2E-AE64-13321A15E7D4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T020506Z

@@ -1,0 +1,14 @@
+﻿---
+ID: "3993a6d0-281a-406e-af67-5ae5016dea42"
+Parent: "f762cb40-ef26-43bc-a8aa-fe26560d51b5"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Feature/Scaffolding
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T021155Z

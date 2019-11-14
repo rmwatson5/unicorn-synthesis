@@ -1,0 +1,17 @@
+﻿---
+ID: "54389dd6-96ba-410d-a2a6-0a4a92730d41"
+Parent: "f7d70504-4379-48ea-8105-ceb5184c754f"
+Template: "f7d70504-4379-48ea-8105-ceb5184c754f"
+Path: /sitecore/templates/Foundation/BaseSite/Navigation Item/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T041513Z
+    - ID: "bf621c36-9f8b-4ce4-8b82-ff2e8a4978ce"
+      Hint: Link Text
+      Value: $name

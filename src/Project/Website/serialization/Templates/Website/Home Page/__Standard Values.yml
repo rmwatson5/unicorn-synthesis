@@ -1,0 +1,24 @@
+﻿---
+ID: "73156d66-c79d-4f4e-93d3-5f53794d9764"
+Parent: "36fa138c-0ba5-4599-9fa9-8dea3e4e5f30"
+Template: "36fa138c-0ba5-4599-9fa9-8dea3e4e5f30"
+Path: /sitecore/templates/Project/Website/Home Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{1BF469F0-F5CE-4082-85F7-610DC8F4CCAF}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T024741Z

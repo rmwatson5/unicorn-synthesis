@@ -1,0 +1,18 @@
+﻿---
+ID: "1bf469f0-f5ce-4082-85f7-610dc8f4ccaf"
+Parent: "559c67ce-343a-4da1-a0a7-67582116f2f2"
+Template: "3a45a723-64ee-4919-9d41-02fd40fd1466"
+Path: /sitecore/layout/Layouts/Project/Website/Default
+DB: master
+SharedFields:
+- ID: "a036b2bc-ba04-44f6-a75f-bae6cd242abf"
+  Hint: Path
+  Value: /Views/Layouts/Default.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T031744Z

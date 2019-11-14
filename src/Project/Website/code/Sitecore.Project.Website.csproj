@@ -140,6 +140,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -194,6 +197,9 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.DataProvider.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Scaffolding.Serialization.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.BaseSite.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Frames.Serialization.config" />
     <None Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
@@ -201,6 +207,8 @@
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Properties\PublishProfiles\TeamCity.pubxml" />
     <None Include="App_Config\Include\Synthesis\Synthesis.ControlPanel.IdentityServer.config" />
+    <Content Include="Views\Layouts\Default.cshtml" />
+    <Content Include="Views\Header\MainNavigation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -209,10 +217,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Standard Config Files\" />
-    <Folder Include="Views\Layouts\" />
+    <Folder Include="Views\Frames\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Feature\Scaffolding\code\Sitecore.Feature.Scaffolding.csproj">
+      <Project>{c15078a3-eb2f-48df-a38a-edef69ff4058}</Project>
+      <Name>Sitecore.Feature.Scaffolding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\BaseSite\code\Sitecore.Foundation.BaseSite.csproj">
+      <Project>{c0e8051b-ad09-4a4e-b869-1ddb3ef57854}</Project>
+      <Name>Sitecore.Foundation.BaseSite</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\DataAccess\code\Sitecore.Foundation.DataAccess.csproj">
       <Project>{b8774fcb-4c23-432e-a90b-5d4704743ce4}</Project>
       <Name>Sitecore.Foundation.DataAccess</Name>
