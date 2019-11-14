@@ -214,6 +214,7 @@
     <Content Include="Views\Header\MainNavigation.cshtml" />
     <Content Include="Views\Frames\Col-Lg3-Lg9.cshtml" />
     <Content Include="Views\SynthesisMedia\Carousel.cshtml" />
+    <Content Include="Views\SynthesisMedia\ItemListing.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

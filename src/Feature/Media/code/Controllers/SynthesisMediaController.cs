@@ -13,5 +13,10 @@ namespace Sitecore.Feature.Media.Controllers
             model.Slides = model.RenderingItem.Children.OfType<CarouselSlide>();
             return this.View(model);
         }
+
+        public ActionResult ItemListing()
+        {
+            return this.View();
+        }
     }
 }
